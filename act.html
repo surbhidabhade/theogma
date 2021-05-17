@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <title>The Ogma | Activities</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #FCF6FB;
+    }
+    
+    .topnav {
+        float: left;
+        overflow: hidden;
+        background-color: black;
+        position: fixed;
+        width: 100%;
+        top: 0;
+    }
+    
+    .topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 30px 16px;
+        font-family: Ubuntu Condensed;
+        padding-bottom: 15px;
+        text-decoration: none;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+    
+    .topnav .logo a {
+        float: right;
+        font-size: 25px;
+        padding-left: 50px;
+        padding-right: 100px;
+    }
+    
+    .topnav .logo a:hover {
+        color: #f2f2f2;
+        text-decoration: none;
+        font-weight: bolder;
+    }
+    
+    .topnav a:hover {
+        color: red;
+        text-decoration: underline;
+        transform: scale(1.1);
+    }
+    
+    .topnav .icon {
+        display: none;
+        color: #f2f2f2;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    
+    .footer {
+        background-color: black;
+        height: 50px;
+        font-size: 16px;
+        padding-top: 10px;
+    }
+    
+    @media screen and (max-width: 600px) {
+        .topnav a {
+            display: none;
+        }
+        .topnav .logo a {
+            display: flex;
+            text-align: center;
+        }
+        .topnav a.icon {
+            float: right;
+            display: block;
+        }
+    }
+    
+    @media screen and (max-width: 600px) {
+        .topnav.responsive {
+            position: relative;
+        }
+        .topnav.responsive .icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .topnav.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
+            color: black;
+            background-color: silver;
+        }
+        .topnav.responsive a:hover {
+            float: none;
+            display: block;
+            text-align: left;
+            color: silver;
+            background-color: black;
+        }
+    }
+    
+    h2 {
+        font-family: Ubuntu Condensed;
+        text-align: center;
+        font-size: 30px;
+    }
+    
+    .btn {
+        margin-left: 250px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    
+    .success {
+        background-color: #2BCF36;
+        color: #f2f2f2;
+        border-radius: 2px;
+        border-style: none;
+        margin-bottom: 20px;
+        font-size: 20px;
+        padding: 10px 10px 10px 10px;
+        font-family: Ubuntu Condensed;
+        justify-content: space-between;
+        margin-left: 20px;
+    }
+    
+    .success:hover {
+        background-color: #46a049;
+    }
+    
+    .row-col {
+        background-color: white;
+        padding-left: 20px;
+    }
+    
+    .col {
+        float: left;
+        width: 30%;
+        padding: 10px;
+    }
+    
+    .col img {
+        padding-top: 50px;
+        padding-left: 180px;
+    }
+    
+    .col p {
+        color: lightslategray;
+        font-family: Ubuntu Condensed;
+        padding-top: 0;
+        justify-content: space-between;
+        font-size: large;
+        word-spacing: 10px;
+    }
+    
+    .col h3 {
+        font-family: Ubuntu Condensed;
+        padding-bottom: 0px;
+        text-align: center;
+    }
+    
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+</style>
+
+<body>
+    <header>
+        <!---responsive top nav-->
+        <div class="topnav" id="myTopnav">
+            <div class="logo">
+
+                <a class="navbar-brand page-scroll animated bounce" href="#"><i class="fa fa-ravelry" aria-hidden="true"></i> The OGMA!!</a>
+            </div>
+            <nav>
+                <a href="homee.html"><i class="fa fa-home"></i> Home</a>
+                <a href="aboutt.html"><i class="fa fa-user-secret" aria-hidden="true"></i>  About</a>
+                <a href="#"><i class="fa fa-wpexplorer" aria-hidden="true"></i>  Activities</a>
+                <a href="#"><i class="fa fa-users" aria-hidden="true"></i>  The team</a>
+                <a href="#"><i class="fa fa-phone" aria-hidden="true"></i>  Contact Us</a>
+            </nav>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+    <br><br><br><br>
+    <h2 class="section-title" text-align="center" style="color: black;">ACTIVITIES</h2>
+    <hr style="border: 1px solid red; width:80px; justify-content: center;">
+    <div style="position:relative">
+        <div class="colored-line colored-line-center"></div>
+    </div>
+
+    <br><br>
+
+    <div class="row-col">
+        <div class="row">
+            <div class="col">
+                <img src="7.png" class="animated bounceInLeft nav4" height="80px" width="80px">
+                <h3 style="color: black; font-size: 30px;">Personality Development</h3><br>
+                <p style="text-align: justify;">Personality development is gaining more and more importance because it enables people to create a good impression about themselves on others, it helps them to build and develop relationships, helps in your career growth and also helps
+                    to improve your financial needs </p>
+            </div>
+            <div class="col">
+                <img src="6.png" class="animated bounceInRight nav4" height="80px" width="80px">
+                <h3 style="color: black; font-size: 30px;">Tackling Stage Fear</h3><br>
+                <p style="text-align: justify;">The fear of public speaking or performance, often called stage fright. Stage fright can occur in people of all experiences and backgrounds, from those who are completely new to being in front of an audience to those who have done so for
+                    years. If you also have this Stage Fright come and join us we will lead you to overcome this fright.</p>
+            </div>
+
+
+            <div class="col">
+                <img src="8.png" class="animated bounceInRight nav4" height="80px" width="80px">
+                <h3 style="color: black; font-size: 30px;">Public Speaking</h3><br>
+                <p style="text-align: justify;">Public speaking is an act of performing a speech to a live audience. The average person ranks the fear of public speaking above Death. There are various problems due to which a person lacks confidence and can't face live audience.Be part
+                    of The Ogma and find all secrets of a professional orator. </p>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    </div>
+
+
+    </div>
+
+
+    </section>
+
+    <br><br>
+    <div>
+        <h2 class="section-title" text-align="center" style="color: black; ">GLIMPSE</h2>
+        <hr style="border: 1px solid red; width:80px; justify-content: center;">
+        <div style="position:relative">
+            <div class="colored-line colored-line-center"></div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="w3-content w3-section" style="max-width:60%;margin-right: auto; margin-left: auto;">
+        <img class="mySlides" src="g1.png" style="width:100%">
+        <img class="mySlides" src="g2.png" style="width:100%">
+        <img class="mySlides" src="g3.png" style="width:100%">
+        <img class="mySlides" src="g4.png" style="width:100%">
+        <img class="mySlides" src="g5.png" style="width:100%">
+        <img class="mySlides" src="g6.png" style="width:100%">
+        <img class="mySlides" src="g7.png" style="width:100%">
+        <img class="mySlides" src="g8.png" style="width:100%">
+        <img class="mySlides" src="g9.png" style="width:100%">
+        <img class="mySlides" src="g10.png" style="width:100%">
+    </div>
+
+
+
+    <section id="work">
+        <div class="container">
+            <div class="container1">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div style="margin-top: 50px;">
+                            <h2 class="section-title" text-align="center" style="color: black; ">WORKSHOPS</h2>
+                            <hr style="border: 1px solid red; width:80px; justify-content: center;">
+                            <div style="position:relative">
+                                <div class="colored-line colored-line-center"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+                <div class="btn">
+                    <button class="btn success">Workshop 1</button>
+                    <button class="btn success">Workshop 2</button>
+                    <button class="btn success">Workshop 3</button>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+
+
+
+
+    </div>
+
+    </div>
+    <div class="footer">
+        <div class="row" style="color: white;">
+            <div class="col-md-6" style="text-align: center;">Made With <span style="color: red;">&hearts;</span> By @Surbhi
+            </div>
+            <div class="col-md-6" style="text-align: center;">Copyrights &copy; 2019</div>
+
+
+        </div>
+
+    </div>
+
+</body>
+
+
+<script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+            myIndex = 1
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 3000); // Change image every 2 seconds
+    }
+</script>
+
+</body>
+
+</html>
